@@ -70,7 +70,7 @@ CreatorTab:AddButton({
   	end    
 })
 
-CreatorTab:AddParagraph("当前版本:","1.25")
+CreatorTab:AddParagraph("当前版本:","1.27")
 
 local Section = CreatorTab:AddSection({
     Name = "更新日志📈"
