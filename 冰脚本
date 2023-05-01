@@ -20,7 +20,7 @@ local vu = game:GetService("VirtualUser")
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "冰脚本1.3", HidePremium = false,SaveConfig = true,IntroText = "冰脚本1.3",ConfigFolder = "bing1.3"})
+local Window = OrionLib:MakeWindow({Name = "冰脚本1.31", HidePremium = false,SaveConfig = true,IntroText = "冰脚本1.31",ConfigFolder = "bing"})
 
 OrionLib:MakeNotification({
     Name = "冰脚本",
@@ -79,7 +79,7 @@ local Section = CreatorTab:AddSection({
 CreatorTab:AddDropdown({
     Name = "更新日志",
     Default = "1",
-    Options = {"冰脚本1.2-更新Doors困难模式","冰脚本1.25-更新光影 CW 通用 其他创作者脚本 鲨口逃生2 反挂机","冰脚本1.27-更新了一点汉化，加密升级","冰脚本1.3-通用更新 Doors娱乐更新"},
+    Options = {"冰脚本1.2-更新Doors困难模式","冰脚本1.25-更新光影 CW 通用 其他创作者脚本 鲨口逃生2 反挂机","冰脚本1.27-更新了一点汉化，加密升级","通用更新 Doors娱乐更新","冰脚本1.31-更新steep steps200米"},
     Callback = function(Value)
         print(Value)
     end    
@@ -841,6 +841,14 @@ steepTab:AddButton({
     Callback = function()
               print("button pressed")
       game.Players.localPlayer.Character.HumanoidRootPart.CFrame  = CFrame.new(-231.11744689941406, 359.9999084472656, -829.4798583984375)
+      end    
+})
+
+steepTab:AddButton({
+    Name = "200米",
+    Callback = function()
+              print("button pressed")
+      game.Players.localPlayer.Character.HumanoidRootPart.CFrame  = CFrame.new(56.248634338378906, 748.9998168945312, -1532.13232421875)
       end    
 })
 
